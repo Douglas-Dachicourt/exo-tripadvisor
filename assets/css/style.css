@@ -1,0 +1,497 @@
+/* ----------- GENERAL ------- */
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: TS-Reg, sans-serif;
+  /* font-family: TS-Med, sans-serif; */
+}
+
+/*--------------- HEADER ------ */
+
+header {
+  height: 100px;
+  /* border: 1px solid salmon; */
+  display: flex;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  /* background-color: beige; */
+}
+
+.logo img {
+  height: 40px;
+}
+
+.header-nav {
+  width: 50%;
+}
+
+.header-nav > nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  padding: 10px 15px;
+}
+
+header a:hover {
+  padding: 10px 15px;
+  background-color: lightgray;
+  border-radius: 20px;
+}
+
+header a:nth-child(2):hover {
+  text-decoration: underline;
+  background-color: white;
+  color: rgb(103, 101, 101);
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+}
+
+button:hover {
+  background-color: rgb(83, 81, 81);
+  cursor: pointer;
+}
+/*----- FIN HEADER ----------- */
+/* --------------------- */
+/* -----MAIN------- */
+
+main {
+  /* background-color: beige; */
+  /* border: 1px solid black; */
+  padding-bottom: 100px;
+}
+/* --------------------------- */
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: TS-Med, sans-serif;
+}
+
+.exploration {
+  color: #ff5d5d;
+}
+
+section p {
+  padding-top: 5px;
+  font-size: 13px;
+  color: rgb(82, 80, 80);
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+section p a {
+  color: rgb(82, 80, 80);
+}
+
+section > .menu {
+  /* background-color: lightcyan; */
+  height: 90px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.menu a {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 15px;
+  height: 70px;
+  gap: 5px;
+  width: 180px;
+  font-weight: bold;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu a:hover {
+  background-color: black;
+  color: white;
+}
+/* ------FIN MENU PRINCIPAL */
+/*  ------------------ */
+/* ----PHOTOS PRINCIPALES */
+
+.main-pic {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+.main-pic > div {
+  height: 100%;
+  /* border: 1px solid black; */
+}
+
+.first-pic {
+  /* background-color: red; */
+  width: 65%;
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.button-style {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 12px;
+  text-align: center;
+  gap: 6px;
+}
+
+.first-pic img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+}
+
+.other-pics {
+  width: 50%;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+.other-pics img {
+  height: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* ---NAV SOUS LES PHOTOS --- */
+
+.under-pic-nav {
+  height: 50px;
+  /* background-color: greenyellow; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.under-pic-nav > div:first-child {
+  font-size: 12px;
+  /* background-color: #ff5d5d; */
+  text-align: center;
+}
+
+.under-pic-nav a {
+  text-decoration: none;
+  color: rgb(104, 102, 102);
+}
+
+.under-pic-nav > div:last-child {
+  height: 50%;
+}
+
+.under-pic-nav > div > p {
+  font-size: 12px;
+  color: rgb(104, 102, 102);
+}
+
+.under-pic-nav a:hover {
+  text-decoration: underline;
+  color: rgb(99, 94, 94);
+}
+
+/* ---A PROPOS DE LA VILLE --- */
+
+.about {
+  padding-top: 28px;
+  display: flex;
+  gap: 55px;
+  padding-bottom: 60px;
+}
+
+h2 {
+  font-family: TS-Med, sans-serif;
+  font-size: 28px;
+  padding-bottom: 40px;
+}
+
+.presentation {
+  height: 420px;
+  width: 55%;
+  /* background-color: red; */
+  padding-right: 10px;
+}
+
+.presentation p {
+  color: rgb(43, 41, 41);
+  font-size: 18px;
+  text-align: start;
+  /* gap: 10px; */
+}
+
+.mapping {
+  height: 420px;
+  width: 45%;
+  /* background-color: red; */
+  /* border: 1px solid black; */
+}
+
+.mapping > div:first-child {
+  height: 60%;
+  background-color: #ff5d5d;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 30px 30px 0 0;
+  align-items: start;
+}
+
+.mapping > div:last-child {
+  height: 40%;
+  /* background-color: green; */
+}
+
+.mapping img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0 0 30px 30px;
+}
+
+h3 {
+  font-family: TS-Med, sans-serif;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.mapping p {
+  font-size: 15px;
+  color: inherit;
+}
+
+.mapping button {
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+/* -----------LES INMANQUABLES ---------- */
+
+.les-inmanquables {
+  height: 300px;
+  /* background-color: beige; */
+  display: flex;
+  gap: 30px;
+}
+
+.que-faire {
+  height: 100%;
+  width: 25%;
+  /* background-color: red; */
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  scrollbar-width: none;
+}
+
+.carousel {
+  height: 100%;
+  width: 75%;
+  /* background-color: lightblue; */
+  display: flex;
+  /* justify-content: center; */
+  flex-wrap: nowrap;
+  overflow: scroll hidden;
+  gap: 10px;
+}
+
+.carousel > div {
+  height: 100%;
+  width: 270px;
+  /* border: 1px solid black; */
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.heart > i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.award > i {
+  position: absolute;
+  left: 10px;
+  top: 130px;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: goldenrod;
+}
+
+.heart > i:hover {
+  cursor: pointer;
+  background-color: rgb(249, 245, 245);
+  color: red;
+}
+
+.carousel > div > img {
+  height: 60%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.carousel p {
+  font-size: 16px;
+  color: rgb(56, 53, 53);
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.que-faire p {
+  color: rgb(43, 41, 41);
+  font-size: 16px;
+  text-align: start;
+}
+
+.que-faire a {
+  color: inherit;
+  font-size: 15px;
+}
+
+.que-faire a:hover {
+  color: rgb(67, 63, 63);
+}
+
+h5 {
+  padding-bottom: 15px;
+}
+/* ----------EN PLUS-------------- */
+
+.le-leman {
+  height: 270px;
+  /* background-color: bisque; */
+  /* border: 1px solid black; */
+}
+
+.carousel-2::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel-2 {
+  scrollbar-width: none;
+  display: flex;
+  overflow: scroll hidden;
+  gap: 10px;
+}
+
+.carousel-2 > div {
+  height: 300px;
+  width: 277px;
+  /* border: 1px solid black; */
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.carousel-2 > div > img {
+  height: 90%;
+  width: 277px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.carousel-2 p {
+  color: rgb(56, 53, 53);
+  font-size: 16px;
+}
+
+/* ----------FOOTER---------------- */
+
+footer {
+  height: 150px;
+  background-color: #faf1ec;
+}
+footer .container {
+  display: flex;
+  gap: 5px;
+}
+
+.logo-final {
+  height: 150px;
+  width: 35%;
+  /* border: 1px solid black;
+  background-color: red; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.credits {
+  height: 150px;
+  width: 65%;
+  /* border: 1px solid black; */
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+}
+
+.logo-final img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+footer a {
+  color: black;
+  font-family: TS-Med, sans-serif;
+}
+
+footer a:hover {
+  color: rgb(60, 57, 57);
+}
